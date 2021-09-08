@@ -89,7 +89,7 @@ body {
 .city-wrap .city {
     position: absolute;
     right: 24px;
-    top: -80px;
+    top: -50px;
     width: 100%;
     z-index: -99;
 }
@@ -137,7 +137,7 @@ body {
     left: 114px;
     top: 148px;
     animation-name: rightMove, bottomMove;
-    animation-duration: 8s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     transform: scale(0.8, 0.8);
@@ -335,29 +335,77 @@ body {
 /* icon start */
 .icon {
     position: absolute;
-    right: 400px;
+    right: 651px;
     top: 300px;
 }
 
-.icon01 {
+.icon01-w,.icon02-w,.icon03-w,.icon04-w,.icon05-w,.icon06-w {
     position: relative;
-    right: -55px;
-    top: -230px;
-    animation: 3s;
+    width: fit-content;
 }
 
-.icon01:hover {
-    top: -240px;
+
+.icon01,.icon-text-01 {
+    position: absolute;
+    left: -390px;
+    top: -210px;
+    animation: 3s;
+    display: inherit;
+} 
+
+.icon-text-01,.icon-text-04,.icon-text-05,.icon-text-02,.icon-text-06,.icon-text-03 {
+    display: none;
+} 
+
+.icon-animation{
+    -webkit-filter: brightness(110%);
+    /* Safari */
+    filter: brightness(110%);
     transform: scale(1.05);
-}
+    transition: .6;
+    -webkit-transition: .6;
+    -moz-transition: .6;
+    -ms-transition: .6;
+    -o-transition: .6;
+} 
 
-.icon02 {
-    position: relative;
-    right: -210px;
-    top: -40px;
-    animation: 3s;
-}
 
+
+.icon02,.icon-text-02 {
+    position: absolute;
+    right: 4px;
+    top: -25px;
+} 
+
+.icon03,.icon-text-03 {
+    position: absolute;
+    right: -464px;
+    top: 160px;
+} 
+
+.icon04,.icon-text-04 {
+    position: absolute;
+    right: -133px;
+    top: -350px;
+} 
+
+.icon05,.icon-text-05 {
+    position: absolute;
+    right: -465px;
+    top: -384px;
+} 
+
+.icon06,.icon-text-06 {
+    position: absolute;
+    right: -587px;
+    top: -219px;
+} 
+
+
+
+
+
+/* 
 .icon02:hover {
     top: -50px;
     transform: scale(1.05);
@@ -373,16 +421,16 @@ body {
 .icon03:hover {
     top: 140px;
     transform: scale(1.05);
-}
+} */
 
-.icon04 {
+/* .icon04 {
     position: relative;
     right: -103px;
     top: -370px;
     animation: 3s;
-}
+} */
 
-.icon04:hover {
+/* .icon04:hover {
     top: -380px;
     transform: scale(1.05);
 }
@@ -409,7 +457,7 @@ body {
 .icon06:hover {
     top: -370px;
     transform: scale(1.05);
-}
+} */
 
 .icon img {
     cursor: pointer;

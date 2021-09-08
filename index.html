@@ -31,7 +31,7 @@
 			<div class="position-relative">
 				<img class="lightLine" src="./img/lightLine-01.png" alt="">
 				<img class="trophy" src="./img/trophy.png" alt="">
-				<img class="city" src="./img/city-11.png" alt="">
+				<img class="city" src="./img/city-03.png" alt="">
 				<img class="MRT opacity" src="./img/MRT-05.png" alt="">
 				<img class="plane" src="./img/plan-04.png" alt="">
 				<!-- rob start -->
@@ -43,12 +43,35 @@
 				<!-- rob end -->
 				<!-- icon start -->
 				<div class="icon">
-					<img class="icon01" src="img/icon01.png" alt="">
-					<img class="icon02" src="img/icon02.png" alt="">
-					<img class="icon03" src="img/icon03.png" alt="">
-					<img class="icon04" src="img/icon04.png" alt="">
-					<img class="icon05" src="img/icon05.png" alt="">
-					<img class="icon06" src="img/icon06.png" alt="">
+					<div class="icon01-w">
+						<img class="icon01" src="img/icon01.png" alt="">
+						<img class="icon-text-01" src="img/icon-text-01.png" alt="">
+					</div>
+					<div class="icon02-w">
+						<img class="icon02" src="img/icon02.png" alt="">
+						<img class="icon-text-02" src="img/icon-text-02.png" alt="">
+					</div>
+					<div class="icon03-w">
+						<img class="icon03" src="img/icon03.png" alt="">
+						<img class="icon-text-03" src="img/icon-text-03.png" alt="">
+					</div>
+					<div class="icon04-w">
+						<img class="icon04" src="img/icon04.png" alt="">
+						<img class="icon-text-04" src="img/icon-text-04.png" alt="">
+					</div>
+					<div class="icon05-w">
+						<img class="icon05" src="img/icon05.png" alt="">
+						<img class="icon-text-05" src="img/icon-text-05.png" alt="">
+					</div>
+					<div class="icon06-w">
+						<img class="icon06" src="img/icon06.png" alt="">
+						<img class="icon-text-06" src="img/icon-text-06.png" alt="">
+					</div>
+					<!-- <img class="icon02" src="img/icon02.png" alt="">
+					<img class="icon03" src="img/icon03.png" alt=""> -->
+					<!-- <img class="icon04" src="img/icon04.png" alt=""> -->
+					<!-- <img class="icon05" src="img/icon05.png" alt="">
+					<img class="icon06" src="img/icon06.png" alt=""> -->
 				</div>
 				<!-- icon end -->
 			</div>
@@ -56,7 +79,7 @@
 		<!-- city end -->
 		<img class="bg" src="./img/indexBack_1.jpg" alt="">
 		<div class="flexd-right-button">
-			<a href="./exhibition.html"><img class="exhibition" src="./img/more-tool-exhibition.png" alt=""></a>
+			<a target="_blank" href="./exhibition.html"><img class="exhibition" src="./img/more-tool-exhibition.png" alt=""></a>
 			<img class="robotMessage-btn" src="./img/more-tool-robot.png" alt="">
 			<img class="robot-plane" src="./img/robotSample.png" alt="">
 		</div>
@@ -88,6 +111,74 @@
 	$(".robot-plane").click(function () {
 		$(".robot-plane").removeClass("show");
 	});
+
+
+	$(".icon01-w").mouseover(function () {
+		$(".icon-text-01").addClass("show");
+		$(".icon-text-01").addClass("icon-animation");
+		// $(".robot-plane").removeClass("show");
+	});
+
+	$(".icon01-w").mouseout(function () {
+		$(".icon-text-01").removeClass("show");
+		// $(".robot-plane").removeClass("show");
+	});
+
+	$(".icon02-w").mouseover(function () {
+		$(".icon-text-02").addClass("show");
+		$(".icon-text-02").addClass("icon-animation");
+		// $(".robot-plane").removeClass("show");
+	});
+
+	$(".icon02-w").mouseout(function () {
+		$(".icon-text-02").removeClass("show");
+		// $(".robot-plane").removeClass("show");
+	});
+
+	$(".icon03-w").mouseover(function () {
+		$(".icon-text-03").addClass("show");
+		$(".icon-text-03").addClass("icon-animation");
+		// $(".robot-plane").removeClass("show");
+	});
+
+	$(".icon03-w").mouseout(function () {
+		$(".icon-text-03").removeClass("show");
+		// $(".robot-plane").removeClass("show");
+	});
+
+	$(".icon04-w").mouseover(function () {
+		$(".icon-text-04").addClass("show");
+		$(".icon-text-04").addClass("icon-animation");
+		// $(".robot-plane").removeClass("show");
+	});
+
+	$(".icon04-w").mouseout(function () {
+		$(".icon-text-04").removeClass("show");
+		// $(".robot-plane").removeClass("show");
+	});
+
+	$(".icon05-w").mouseover(function () {
+		$(".icon-text-05").addClass("show");
+		$(".icon-text-05").addClass("icon-animation");
+		// $(".robot-plane").removeClass("show");
+	});
+
+	$(".icon05-w").mouseout(function () {
+		$(".icon-text-05").removeClass("show");
+		// $(".robot-plane").removeClass("show");
+	});
+
+	$(".icon06-w").mouseover(function () {
+		$(".icon-text-06").addClass("show");
+		$(".icon-text-06").addClass("icon-animation");
+		// $(".robot-plane").removeClass("show");
+	});
+
+	$(".icon06-w").mouseout(function () {
+		$(".icon-text-06").removeClass("show");
+		// $(".robot-plane").removeClass("show");
+	});
+
 
 
 </script>
