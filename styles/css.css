@@ -358,9 +358,8 @@ body {
 } 
 
 .icon-animation{
-    -webkit-filter: brightness(110%);
-    /* Safari */
-    filter: brightness(110%);
+    -webkit-filter: brightness(100%);
+    /*Safari*/filter: brightness(100%);
     transform: scale(1.05);
     transition: .6;
     -webkit-transition: .6;
