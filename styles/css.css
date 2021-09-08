@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+body {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -999;
+}
+
+.home-bg {
+    position: relative;
+}
+
+
+
+
+
+/* banner word start */
+.city-bannerTitle-wrap{
+    animation: titleAnimation 3s ease;
+}
+
+@keyframes titleAnimation {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+      clip-path: polygon(100% 0, 100% 0, 0 100%, 0 100%);
+  }
+
+  100% {
+       transform: translateY(0px);
+       opacity: 1;
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+.bannerTitle {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 7rem;
+    line-height: 108px;
+    
+}
+
+.bannerTitle-second {
+    font-family: 'Karla', sans-serif;
+    color: #fff;
+    font-weight: 400 !important;
+    font-size: 2rem !important;
+    margin-top: -12px !important;
+}
+
+.city-bannerTitle-wrap {
+    position: absolute;
+    top: 200px;
+    left: 97px;
+}
+
+@media screen and (min-width:1500px) {
+    .bannerTitle {
+        font-size: 8rem;
+        line-height: 138px;
+    }
+}
+
+
+
+/* banner word end */
+
+/* city start */
+
+.city-wrap {
+    position: absolute;
+    top: 200px;
+    width: 1100px;
+    height: 542px;
+    right: 0px;
+}
+
+.city-wrap .city {
+    position: absolute;
+    right: 24px;
+    top: -80px;
+    width: 100%;
+    z-index: -99;
+}
+
+
+/* city opacity start */
+
+.position-relative {
+    position: relative;
+    animation: fadein 4s ease;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        top: 20px;
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+/* city opacity end */
+
+
+/* trophy start */
+
+.trophy{   
+    position: absolute;
+    top: 400px;
+    left: -180px;
+}
+
+/* trophy end */
+
+
+/* MRT start */
+.MRT {
+    position: absolute;
+    left: 114px;
+    top: 148px;
+    animation-name: rightMove, bottomMove;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform: scale(0.8, 0.8);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+}
+
+@keyframes rightMove {
+    100% {
+        animation-timing-function: linear;
+        left: 560px;
+        -webkit-backface-visibility: hidden;
+    }
+
+    ;
+
+}
+
+@keyframes bottomMove {
+    90% {
+        opacity: 1;
+        -webkit-backface-visibility: hidden;
+    }
+
+    100% {
+        animation-timing-function: linear;
+        top: 256px;
+        opacity: 0;
+        -webkit-backface-visibility: hidden;
+    }
+}
+
+/* MRT end */
+
+/* line start */
+
+.lightLine{
+    transform: scale(.4);
+    position: absolute;
+    left: -1363px;
+    top: -289px;
+    z-index: -100;
+}
+
+/* line end */
+
+/* plane */
+
+.plane {
+    position: absolute;
+    left: 120px;
+    animation-name: planeFly;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    -moz-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -o-transform: scale(0.8, 0.8);
+}
+
+@keyframes planeFly {
+    0% {
+        top: 20px;
+    }
+
+    10% {
+        top: 0px;
+    }
+
+    20% {
+        top: 20px;
+    }
+
+    30% {
+        top: 0px;
+    }
+
+    40% {
+        top: 20px;
+    }
+
+    50% {
+        top: 0px;
+    }
+
+    60% {
+        top: 20px;
+    }
+
+    70% {
+        top: 0px;
+    }
+
+    80% {
+        top: 20px;
+    }
+
+    90% {
+        top: 0px;
+    }
+
+    100% {
+        top: 20px;
+    }
+
+}
+
+/* plane */
+
+/* rob start */
+
+.rob {
+    position: absolute;
+    right: 350px;
+    top: 600px;
+    zoom: 0.7;
+}
+
+.RobHead {
+    position: relative;
+    right: -242px;
+    top: -50px;
+    z-index: -3;
+    animation: RobHead 2s infinite;
+    transition-timing-function: cubic-bezier(0, 0.1, 1, -0.12);
+    animation-direction: alternate;
+}
+
+.RobHand {
+    position: relative;
+    transform-origin: left bottom;
+    animation: RobHand 2s infinite;
+    animation-direction: alternate;
+    zoom: 0.6;
+    top: -153px;
+    left: -175px;
+    z-index: 5;
+}
+
+@keyframes RobHead {
+    0% {
+        z-index: 3;
+    }
+
+    ;
+
+    1% {
+        z-index: -3;
+    }
+
+    ;
+}
+
+@keyframes RobHand {
+    0% {
+        transform: rotateZ(20deg);
+    }
+
+    ;
+
+    25% {
+        transform: rotateZ(25deg);
+    }
+
+    ;
+
+    50% {
+        transform: rotateZ(35deg);
+    }
+
+    ;
+
+    75% {
+        transform: rotateZ(25deg);
+    }
+
+    ;
+
+    100% {
+        transform: rotateZ(20deg);
+    }
+
+    ;
+}
+
+/* rob end */
+
+/* icon start */
+.icon {
+    position: absolute;
+    right: 400px;
+    top: 300px;
+}
+
+.icon01 {
+    position: relative;
+    right: -55px;
+    top: -230px;
+    animation: 3s;
+}
+
+.icon01:hover {
+    top: -240px;
+    transform: scale(1.05);
+}
+
+.icon02 {
+    position: relative;
+    right: -210px;
+    top: -40px;
+    animation: 3s;
+}
+
+.icon02:hover {
+    top: -50px;
+    transform: scale(1.05);
+}
+
+.icon03 {
+    position: relative;
+    right: -543px;
+    top: 150px;
+    animation: 3s;
+}
+
+.icon03:hover {
+    top: 140px;
+    transform: scale(1.05);
+}
+
+.icon04 {
+    position: relative;
+    right: -103px;
+    top: -370px;
+    animation: 3s;
+}
+
+.icon04:hover {
+    top: -380px;
+    transform: scale(1.05);
+}
+
+.icon05 {
+    position: relative;
+    right: -303px;
+    top: -400px;
+    animation: 3s;
+}
+
+.icon05:hover {
+    top: -410px;
+    transform: scale(1.05);
+}
+
+.icon06 {
+    position: relative;
+    right: -913px;
+    top: -360px;
+    animation: 3s;
+}
+
+.icon06:hover {
+    top: -370px;
+    transform: scale(1.05);
+}
+
+.icon img {
+    cursor: pointer;
+}
+
+.icon01:hover,
+.icon02:hover,
+.icon03:hover,
+.icon04:hover,
+.icon05:hover,
+.icon06:hover {
+    -webkit-filter: brightness(110%);
+    /* Safari */
+    filter: brightness(110%);
+}
+
+/* icon end */
+
+
+/* fixed */
+.flexd-right-button {
+    position: fixed;
+    right: 20px;
+    bottom: 120px;
+    display: none;
+    cursor: pointer;
+    zoom: .8;
+    cursor: pointer;
+}
+
+.msg-opening-mask{
+    display: none;
+}
+
+
+.robot-plane{
+    position: absolute;
+    left: -228px;
+    top: -429px;
+    display: none;
+}
+
+.exhibition {
+    position: absolute;
+    right: 0px;
+    top: -206px;
+}
+
+.show {
+    display: block!important;
+}
+
+/* fixed */
+
+/* media screen start */
+@media screen and (max-width:2200px) {
+    .city-bannerTitle-wrap{
+        zoom: 1.25;
+    }
+    .city-wrap {
+        zoom: 1.25;
+    }
+}
+
+@media screen and (max-width:2100px) {
+    .city-bannerTitle-wrap{
+        zoom: 1.2;
+    }
+    .city-wrap {
+        zoom: 1.2;
+    }
+}
+
+@media screen and (max-width:2000px) {
+    .city-bannerTitle-wrap{
+        zoom: 1.15;
+    }
+    .city-wrap {
+        zoom: 1.15;
+    }
+}
+
+@media screen and (max-width:1900px) {
+    .city-bannerTitle-wrap{
+        zoom: 1.1;
+    }
+    .city-wrap {
+        zoom: 1.1;
+    }
+}
+
+@media screen and (max-width:1800px) {
+    .city-bannerTitle-wrap{
+        zoom: 1.05;
+    }
+    .city-wrap {
+        zoom: 1.05;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .city-bannerTitle-wrap{
+        zoom: .9;
+    }
+    .city-wrap {
+        zoom: .9;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .city-bannerTitle-wrap{
+        zoom: .85;
+    }
+    .city-wrap {
+        zoom: .85;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .city-bannerTitle-wrap{
+        zoom: .8;
+    }
+    .city-wrap {
+        zoom: .8;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .city-bannerTitle-wrap{
+        zoom: .75;
+    }
+    .city-wrap {
+        zoom: .75;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .city-bannerTitle-wrap{
+        zoom: .7;
+    }
+    .city-wrap {
+        zoom: .7;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .city-bannerTitle-wrap{
+        zoom: .65;
+    }
+    .city-wrap {
+        zoom: .65;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .city-bannerTitle-wrap{
+        zoom: .6;
+    }
+    .city-wrap {
+        zoom: .6;
+    }
+}
+
+/* media screen end */
+

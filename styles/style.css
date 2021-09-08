@@ -1,0 +1,105 @@
+body{
+    display: block;
+    padding:0;
+    margin:0;
+    background: rgb(253, 251, 96);
+  }
+
+  .rob{
+      position: relative;
+  }
+
+.rob-body{
+    position: relative;
+}
+.rob-hand{
+    position: relative;
+    transform-origin:left bottom;
+    /* transform: translate(-300px, -100px) rotateZ(45deg);
+    transition: 3s; */
+    animation-name: rob-hand;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    top: -232px;
+    right: 257.5px;
+    z-index:5;
+}
+@keyframes rob-hand{
+    0%{transform:rotateZ(20deg);};
+    25%{transform:rotateZ(25deg);};
+    50%{transform:rotateZ(35deg);};
+    75%{transform:rotateZ(25deg);};
+    100%{transform:rotateZ(20deg);};
+}
+.rob-head{
+    position: relative;
+    z-index:99;
+}
+.rob-handd{
+    position: relative;
+    transform-origin:left bottom;
+    /* transform: translate(-300px, -100px) rotateZ(45deg);
+    transition: 3s; */
+    animation-name: rob-hand;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* top: -235px;
+    right: 255px; */
+    z-index:-2;
+}
+.rob-bodyy{
+    position: relative;
+    top:-479px;
+    right:55px;
+}
+
+.rob-head1{
+    position: relative;
+    z-index: 0;
+    animation-name: rob-head1;
+    animation-duration: 1s;
+}
+
+.rob-head2{
+    position: relative;
+    right: 496px;
+    animation-name: rob-head2;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: -1;
+}
+.mask{
+    position: relative;
+    top:-238px;
+    right:530px;
+    z-index: 5;
+}
+
+@keyframes rob-head2{
+    0%{z-index:1;};
+    0.5%{z-index:-1;};
+    /* 2%{z-index: 1;}; */
+
+}
+
+@keyframes rob-head1{
+    1%{display: none;};
+}
+.rob-headd{
+    position: relative;
+    right:-551px;
+    top: -230px;
+    z-index: -3;
+    /* animation-iteration-count: infinite; */
+    animation: handd 2s infinite ;
+    transition-timing-function: cubic-bezier(0,0.1,1,-0.12);
+    animation-direction: alternate;
+    
+}
+@keyframes handd{
+    0%{z-index: 3;};
+    1%{z-index: -3;};
+}

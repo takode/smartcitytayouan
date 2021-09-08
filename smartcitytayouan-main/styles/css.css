@@ -1,0 +1,126 @@
+body{
+    display: block;
+    padding:0;
+    margin:0;
+}
+/* img start */
+.CityWrap img {
+    position: absolute;
+}
+/* img end */
+
+/* bg start  */
+.home{
+    position:relative;
+}
+.bg{
+    position:absolute;
+    width: 100vw;
+    z-index: -999;
+}
+
+/* bg end */
+
+ /* city start */
+.CityWrap{
+    /* position: absolute; */
+    /* width: 100vw; */
+    /* right: 0px; */
+}
+.city{
+    right: 20px;
+    top: 113px;
+    width: 67vw;
+}
+
+/* .MRT{
+    position: relative;
+    transform: scale(0.4,0.4);
+    left: 0px;
+    animation: MRT 2s infinite ;
+} */
+
+/* rob start */
+.rob{
+    position: absolute;
+    right: 600px;
+    top: 530px;
+
+}
+.RobHead{
+    position: relative;
+    z-index: -3;
+    animation: RobHead 2s infinite ;
+    transition-timing-function: cubic-bezier(0,0.1,1,-0.12);
+    animation-direction: alternate;
+}
+
+.RobBody{
+    position: relative;
+}
+
+.RobHand{
+    position: relative;
+    transform-origin:left bottom;
+    animation: RobHand 2s infinite;
+    animation-direction: alternate;
+    zoom: 0.6;
+    top: -155px;
+    left: 235px;
+    z-index:5;
+}
+
+.mask{
+    position: relative;
+    top:-238px;
+    right:530px;
+    z-index: 5;
+}
+
+@keyframes RobHead{
+    0%{z-index: 3;};
+    1%{z-index: -3;};
+}
+
+@keyframes RobHand{
+    0%{transform:rotateZ(20deg);};
+    25%{transform:rotateZ(25deg);};
+    50%{transform:rotateZ(35deg);};
+    75%{transform:rotateZ(25deg);};
+    100%{transform:rotateZ(20deg);};
+}
+/* rob end */
+
+/* icon start */
+.icon{
+    position: absolute;
+    right: 600px;
+    top: 530px;
+}
+.icon01{
+    position: relative;
+    right: 395px;
+    top: -290px;
+    animation: 3s;
+}
+
+.icon01:hover{
+    top: -300px;
+    /* transform: scale(1.1); */
+}
+/* icon end */
+
+/* city end */
+/* @keyframes MRT{
+    50%{left: 1000px;};
+} */
+
+@media screen and (max-width:900px){
+    .city-wrap img{
+        top: 78px;
+        width: 64%;
+    }
+}
+
+
+

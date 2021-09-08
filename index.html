@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>
-		桃園國際智慧城市</title>
+		桃園智慧城市資訊網</title>
 	<meta name="google-site-verification" content="nozOqZHqlLv5Le445SuJELVwEjIlcJrhRwo9weWp9HE">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
@@ -14,12 +14,55 @@
 	<link href="./styles/fontawesome-free-5.15.2/css/all.css" rel="stylesheet" type="text/css">
 	<link href="./styles/theme_19.1.css" rel="stylesheet" type="text/css">
 	<style type="text/css"></style>
+	<link rel="stylesheet" href="./styles/css.css">
+	<link rel="stylesheet" href="./styles/chatbot.css">
 
 </head>
 
+
 <body>
-	<img class="w-100" src="./img/indexBack.jpg" alt="">
-	
+	<div class="home-bg">
+		<div class="city-bannerTitle-wrap">
+			<h2 class="bannerTitle">SMART<br />CITY</h2>
+			<h3 class="bannerTitle-second">Intelligent City of Taoyouan</h3>
+		</div>
+		<!-- city start -->
+		<div class="city-wrap">
+			<div class="position-relative">
+				<img class="lightLine" src="./img/lightLine-01.png" alt="">
+				<img class="trophy" src="./img/trophy.png" alt="">
+				<img class="city" src="./img/city-11.png" alt="">
+				<img class="MRT opacity" src="./img/MRT-05.png" alt="">
+				<img class="plane" src="./img/plan-04.png" alt="">
+				<!-- rob start -->
+				<div class="rob">
+					<img class="RobHead" src="img/rob-head-08.png" alt="">
+					<img class="RobBody" src="img/rob-body-08.png" alt="">
+					<img class="RobHand" src="img/03.png" alt="">
+				</div>
+				<!-- rob end -->
+				<!-- icon start -->
+				<div class="icon">
+					<img class="icon01" src="img/icon01.png" alt="">
+					<img class="icon02" src="img/icon02.png" alt="">
+					<img class="icon03" src="img/icon03.png" alt="">
+					<img class="icon04" src="img/icon04.png" alt="">
+					<img class="icon05" src="img/icon05.png" alt="">
+					<img class="icon06" src="img/icon06.png" alt="">
+				</div>
+				<!-- icon end -->
+			</div>
+		</div>
+		<!-- city end -->
+		<img class="bg" src="./img/indexBack_1.jpg" alt="">
+		<div class="flexd-right-button show">
+			<a href="./exhibition.html"><img class="exhibition" src="./img/more-tool-exhibition.png" alt=""></a>
+			<img class="robotMessage-btn" src="./img/more-tool-robot.png" alt="">
+			<img class="robot-plane" src="./img/robotSample.png" alt="">
+		</div>
+	</div>
+
+	</div>
 </body>
 
 <script type="text/javascript" src="./script/jquery-3.5.1.min.js"></script>
@@ -27,8 +70,29 @@
 <script type="text/javascript" src="./script/bootstrap-4.5.3/bootstrap.js"></script>
 
 <script>
+	// 向下滑動偵測顯示按鈕
+	$(window).scroll(function () {
+		var scroll = $(window).scrollTop();
+
+		if (scroll >= 150) {
+			$(".flexd-right-button").addClass("show");
+		} else {
+			$(".flexd-right-button").removeClass("show");
+		}
+	});
+
+	$(".robotMessage-btn").click(function () {
+		$(".robot-plane").addClass("show");
+	});
+
+	$(".robot-plane").click(function () {
+		$(".robot-plane").removeClass("show");
+	});
+
 
 </script>
+
+
 
 
 
